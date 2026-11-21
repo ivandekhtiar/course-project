@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти Tweakful | Питання підприємців</title>
+    <meta name="description" content="Питання щодо фінансування малого бізнесу: закупівлі, обладнання та оборотні кошти. Оберіть тему звернення й опишіть потребу вашої справи.">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="box-logo">
+                <a href="index.html">
+                    <img src="./assets/icons/logo.svg" alt="">
+                    <img src="./assets/icons/logo-text.svg" alt="Tweakful">
+                </a>
+            </div>
+            <nav class="header-nav" id="mainNavigation" aria-label="Основна навігація">
+                <ul>
+                    <li>
+                        <a href="index.html"> Головна
+                        </a>
+                        </li>
+                    <li><a href="404.html">Переваги</a></li>
+                    <li><a href="404.html">Тарифи</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="btn" href="#" data-application-open>
+            <span>Подати заявку</span>
+            <img src="./assets/icons/arrow-right.svg" alt="">
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="mainNavigation" aria-expanded="false" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <!-- 1. Вступний блок "Контакти" -->
+        <section class="contacts-intro">
+            <div class="contacts-intro-wrapper">
+                <h1>Контакти для підприємців</h1>
+                <p>
+                    Маєте запитання про фінансування закупівель, обладнання чи поточних витрат? Сформулюйте потребу вашої справи та зазначте тему звернення.
+                </p>
+            </div>
+        </section>
+    
+        <!-- 2. Форма звернення + контактна інформація -->
+        <section class="contacts-main">
+            <div class="contacts-main-wrapper">
+                <!-- Форма -->
+                <div class="contacts-form-box">
+                    <h2>Надіслати запит</h2>
+                    <p class="contacts-form-subtitle">
+                        Опишіть сферу діяльності, мету фінансування та запитання щодо кредитування. Не зазначайте паролі, дані платіжних карток чи інші конфіденційні відомості.
+                    </p>
+    
+                    <form class="contacts-form" action="#" method="post">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Ім’я представника бізнесу</label>
+                                <input type="text" id="contactName" name="name" placeholder="Ім’я представника вашої справи" required minlength="2" maxlength="80" autocomplete="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Електронна пошта</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="email@example.com" required maxlength="254" autocomplete="email">
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Номер телефону</label>
+                                <input type="tel" id="contactPhone" name="phone" placeholder="+38 (0__) ___ __ __" required maxlength="30" autocomplete="tel" inputmode="tel">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactTopic">Питання щодо фінансування</label>
+                                <select id="contactTopic" name="topic" required>
+                                    <option value="" selected disabled>Оберіть тему звернення</option>
+                                    <option value="credits">Оборотні кошти та закупівлі</option>
+                                    <option value="b2b">Обладнання та розвиток бізнесу</option>
+                                    <option value="tech">Допомога з формою заявки</option>
+                                    <option value="other">Інші питання підприємця</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="contactMessage">Ваше запитання</label>
+                            <textarea id="contactMessage" name="message" rows="4" placeholder="Опишіть діяльність бізнесу та потребу у фінансуванні" required maxlength="2000"></textarea>
+                        </div>
+    
+                        <div class="form-group form-group-inline">
+                            <input type="checkbox" id="contactAgree" name="agree" required>
+                            <label for="contactAgree">
+                                Погоджуюся на обробку персональних даних для розгляду звернення щодо фінансування бізнесу.
+                            </label>
+                        </div>
+    
+                        <button type="submit" class="btn contacts-submit-btn">
+                            <span>Надіслати запит</span>
+                            <img src="./assets/icons/arrow-right.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+    
+                <!-- Контактні дані -->
+                <div class="contacts-info-box">
+                    <h2>Як з нами зв’язатися</h2>
+                    <p class="contacts-info-subtitle">
+                        Навчальні реквізити платформи: телефон, поштові адреси, графік роботи й адреса офісу є вигаданими.
+                    </p>
+    
+                    <div class="contacts-info-cards">
+                        <div class="contacts-info-card">
+                            <h3>Підтримка підприємців</h3>
+                            <p>Понеділок–п’ятниця, з 09:00 до 18:00.</p>
+                            <p>Телефон: <a href="tel:+380440000000">+38 (044) 000-00-00</a></p>
+                            <p>Електронна пошта: <a href="mailto:support@tweakful.example">support@tweakful.example</a></p>
+                        </div>
+    
+                        <div class="contacts-info-card">
+                            <h3>Запити від бізнесу</h3>
+                            <p>Питання щодо закупівель, обладнання та сезонних витрат.</p>
+                            <p>Електронна пошта: <a href="mailto:business@tweakful.example">business@tweakful.example</a></p>
+                        </div>
+    
+                        <div class="contacts-info-card">
+                            <h3>Адреса офісу</h3>
+                            <p>
+                                Платформа фінансування малого бізнесу Tweakful<br>
+                                м. Київ, вул. Ділового розвитку, 12, офіс 304
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- 3. Карта -->
+        <section class="contacts-map-section">
+            <div class="contacts-map-wrapper">
+                <div class="contacts-map-box">
+                    <!-- Тут можна замінити src на власну карту -->
+                    <iframe title="Карта центральної частини Києва" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.689140117996!2d30.516395!3d50.448919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5c4b4df3a5%3A0x9afc89c0d4f4f3b1!2z0LLRg9C70LjRhtGPINCj0LrRgNCw0ZfQvdCw0Y8g0YPQuy4sIDE!5e0!3m2!1suk!2sua!4v0000000000000" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="./assets/icons/logo-text-light.svg" alt="Tweakful">
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <h4>Про Tweakful</h4>
+                <p>Tweakful – платформа цифрового кредитування для малого бізнесу: від закупівлі товарів до оновлення обладнання.</p>
+                <a class="btn-footer" href="#">
+                    <span>Дізнатися більше</span>
+                    <img src="./assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-nav-wrapper">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Підтримка підприємців</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                        <li><a href="#">Умови кредитування</a></li>
+                        <li><a href="#">Захист даних</a></li>
+                        <li><a href="#">Запитання та відповіді</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Блог для бізнесу</a></li>
+                        <li><a href="#">Напрями фінансування</a></li>
+                        <li><a href="#">Матеріали для підприємців</a></li>
+                        <li><a href="#">Співпраця з бізнесом</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-hr"></div>
+        <div class="rights-wrapper">
+            <div class="rights-box">
+                <p>Фінансування для підприємців і невеликих компаній. Плануйте витрати, оцінюйте потребу в коштах та враховуйте можливості бізнесу.</p>
+            </div>
+            <div class="rights-box right">
+                <p>© 2026 Tweakful. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Модалка "Подати заявку" -->
+    <div id="applicationModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" data-modal-overlay></div>
+
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="applicationTitle">
+            <button class="modal-close" type="button" data-modal-close aria-label="Закрити">
+                ✕
+            </button>
+
+            <h2 id="applicationTitle">Заявка на кредит для бізнесу</h2>
+            <p class="modal-subtitle">
+                Вкажіть потребу бізнесу у фінансуванні: бажану суму, мету використання коштів і контактні дані.
+            </p>
+
+            <form id="applicationForm" class="modal-form">
+                <div class="form-group">
+                    <label for="appName">Ім’я представника бізнесу</label>
+                    <input type="text" id="appName" name="name" placeholder="Ім’я представника вашої справи" required minlength="2" maxlength="80" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="appPhone">Номер телефону</label>
+                    <input type="tel" id="appPhone" name="phone" placeholder="+38 (0__) ___ __ __" required maxlength="30" autocomplete="tel" inputmode="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="appAmount">Сума фінансування, грн</label>
+                    <input type="number" id="appAmount" name="amount" placeholder="Вкажіть суму у гривнях" min="1" required step="1" inputmode="numeric">
+                </div>
+
+                <div class="form-group">
+                    <label for="appComment">Мета фінансування (необов’язково)</label>
+                    <textarea id="appComment" name="comment" rows="3" placeholder="Наприклад, закупівля товарів до сезону" maxlength="1000"></textarea>
+                </div>
+
+                <button type="submit" class="btn modal-submit">
+                    <span>Надіслати</span>
+                    <img src="./assets/icons/arrow-right.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Кнопка Вгору -->
+    <button id="toTopBtn" class="to-top-btn" aria-label="Прокрутити вгору">
+        <img src="./assets/icons/arrow-right.svg" alt="">
+    </button>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

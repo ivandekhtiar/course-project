@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінку не знайдено | Tweakful</title>
+    <meta name="description" content="Сторінку платформи Tweakful не знайдено. Поверніться на головну, щоб ознайомитися з цифровим кредитуванням для малого бізнесу.">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="box-logo">
+                <a href="index.html">
+                    <img src="./assets/icons/logo.svg" alt="">
+                    <img src="./assets/icons/logo-text.svg" alt="Tweakful">
+                </a>
+            </div>
+            <nav class="header-nav" id="mainNavigation" aria-label="Основна навігація">
+                <ul>
+                    <li>
+                        <a href="index.html"> Головна
+                        </a>
+                        </li>
+                    <li><a href="404.html">Переваги</a></li>
+                    <li><a href="404.html">Тарифи</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="btn" href="#" data-application-open>
+            <span>Подати заявку</span>
+            <img src="./assets/icons/arrow-right.svg" alt="">
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="mainNavigation" aria-expanded="false" aria-label="Відкрити меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-info">
+                <h1>404 – сторінку не знайдено</h1>
+                <p>За цією адресою немає сторінки. Поверніться на головну, щоб дізнатися про фінансування малого бізнесу.</p>
+                <div class="btn-wrap">
+                    <a class="btn" href="index.html">
+                        <span>Повернутися на головну</span>
+                        <img class="arrow-right" src="./assets/icons/arrow-right.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <img src="https://www.shutterstock.com/shutterstock/videos/3506604721/thumb/1.jpg?ip=x480" alt="Ілюстрація сторінки помилки">
+        </section>
+
+    </main>
+    <footer>
+        <img class="footer-logo" src="./assets/icons/logo-text-light.svg" alt="Tweakful">
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <h4>Про Tweakful</h4>
+                <p>Tweakful – платформа цифрового кредитування для малого бізнесу: від закупівлі товарів до оновлення обладнання.</p>
+                <a class="btn-footer" href="#">
+                    <span>Повернутися на головну</span>
+                    <img src="./assets/icons/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="footer-nav-wrapper">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">Підтримка підприємців</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                        <li><a href="#">Умови кредитування</a></li>
+                        <li><a href="#">Захист даних</a></li>
+                        <li><a href="#">Запитання та відповіді</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Блог для бізнесу</a></li>
+                        <li><a href="#">Напрями фінансування</a></li>
+                        <li><a href="#">Матеріали для підприємців</a></li>
+                        <li><a href="#">Співпраця з бізнесом</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-hr"></div>
+        <div class="rights-wrapper">
+            <div class="rights-box">
+                <p>Фінансування для підприємців і невеликих компаній. Плануйте витрати, оцінюйте потребу в коштах та враховуйте можливості бізнесу.</p>
+            </div>
+            <div class="rights-box right">
+                <p>© 2026 Tweakful. Усі права захищено.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модалка "Подати заявку" -->
+    <div id="applicationModal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" data-modal-overlay></div>
+
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="applicationTitle">
+            <button class="modal-close" type="button" data-modal-close aria-label="Закрити">
+                ✕
+            </button>
+
+            <h2 id="applicationTitle">Заявка на кредит для бізнесу</h2>
+            <p class="modal-subtitle">
+                Вкажіть потребу бізнесу у фінансуванні: бажану суму, мету використання коштів і контактні дані.
+            </p>
+
+            <form id="applicationForm" class="modal-form">
+                <div class="form-group">
+                    <label for="appName">Ім’я представника бізнесу</label>
+                    <input type="text" id="appName" name="name" placeholder="Ім’я представника вашої справи" required minlength="2" maxlength="80" autocomplete="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="appPhone">Номер телефону</label>
+                    <input type="tel" id="appPhone" name="phone" placeholder="+38 (0__) ___ __ __" required maxlength="30" autocomplete="tel" inputmode="tel">
+                </div>
+
+                <div class="form-group">
+                    <label for="appAmount">Сума фінансування, грн</label>
+                    <input type="number" id="appAmount" name="amount" placeholder="Вкажіть суму у гривнях" min="1" required step="1" inputmode="numeric">
+                </div>
+
+                <div class="form-group">
+                    <label for="appComment">Мета фінансування (необов’язково)</label>
+                    <textarea id="appComment" name="comment" rows="3" placeholder="Наприклад, закупівля товарів до сезону" maxlength="1000"></textarea>
+                </div>
+
+                <button type="submit" class="btn modal-submit">
+                    <span>Надіслати</span>
+                    <img src="./assets/icons/arrow-right.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Кнопка Вгору -->
+    <button id="toTopBtn" class="to-top-btn" aria-label="Прокрутити вгору">
+        <img src="./assets/icons/arrow-right.svg" alt="">
+    </button>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
